@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashikumar Bhat | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Animated background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="tag-dot"></span> Available for opportunities
+        </div>
+        <h1 class="hero-name">
+          Shashikumar<br /><span class="name-accent">Bhat</span>
+        </h1>
+        <h2 class="hero-title">
+          <span id="typed"></span><span class="cursor">_</span>
+        </h2>
+        <div class="hero-pills">
+          <span class="hero-pill"><i class="fas fa-layer-group"></i> Full Stack Developer</span>
+          <span class="hero-pill"><i class="fab fa-python"></i> Python Developer</span>
+          <span class="hero-pill"><i class="fas fa-brain"></i> ML Engineer</span>
+        </div>
+        <p class="hero-bio">
+          Building intelligent, data-driven applications — from sleek web interfaces
+          to machine learning pipelines that actually ship.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="Shashikumar_Bhat_Resume.pdf" download class="btn btn-ghost">
+            <i class="fas fa-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/ShashiBhat25" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/shashikumar-bhat" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:shashikumarbhatise2026@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit-ring ring-outer">
+          <div class="orbit-icon" style="--angle:0deg"><i class="fab fa-python"></i></div>
+          <div class="orbit-icon" style="--angle:90deg"><i class="fas fa-database"></i></div>
+          <div class="orbit-icon" style="--angle:180deg"><i class="fab fa-js"></i></div>
+          <div class="orbit-icon" style="--angle:270deg"><i class="fas fa-brain"></i></div>
+        </div>
+        <div class="orbit-ring ring-inner">
+          <div class="orbit-icon" style="--angle:45deg"><i class="fab fa-github"></i></div>
+          <div class="orbit-icon" style="--angle:225deg"><i class="fas fa-flask"></i></div>
+        </div>
+        <div class="orbit-center">
+          <span>SB</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm an Information Science and Engineering graduate from The Oxford College of Engineering,
+            Bengaluru, with hands-on experience in full stack development, Python, and machine learning.
+          </p>
+          <p>
+            On the full stack side, I build responsive, user-friendly web applications using HTML, CSS,
+            JavaScript, and Flask — connecting clean front-end interfaces to robust back-end logic and
+            SQL/NoSQL databases. I enjoy the entire journey from designing a UI to wiring up APIs and
+            persisting data.
+          </p>
+          <p>
+            On the ML side, I've built and evaluated classification models using scikit-learn — Decision Tree,
+            Random Forest, SVM — and deployed ML-driven applications with Flask and SQL-backed
+            data pipelines. Experienced in end-to-end ML workflows: data preprocessing,
+            model training, evaluation, and fairness analysis.
+          </p>
+          <p>
+            Quick learner with a track record of independently building and shipping full working projects across both domains.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Bengaluru, India</span>
+            </div>
+            <div class="meta-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>B.E. Information Science &amp; Engineering — CGPA 8.6</span>
+            </div>
+            <div class="meta-item">
+              <i class="fas fa-language"></i>
+              <span>Kannada · English · Hindi</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">8.6</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Tech Domains</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">What I Work With</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-category-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Python (OOP)</span>
+            <span class="tag">Advanced Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">C</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-icon"><i class="fas fa-brain"></i></div>
+          <h3>Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="tag">scikit-learn</span>
+            <span class="tag">Decision Tree</span>
+            <span class="tag">Random Forest</span>
+            <span class="tag">SVM</span>
+            <span class="tag">Ensemble Methods</span>
+            <span class="tag">Hyperparameter Tuning</span>
+            <span class="tag">Data Preprocessing</span>
+            <span class="tag">Clustering</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-icon"><i class="fas fa-database"></i></div>
+          <h3>Databases &amp; Querying</h3>
+          <div class="skill-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Relational DB Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web &amp; Backend</h3>
+          <div class="skill-tags">
+            <span class="tag">Flask</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-icon"><i class="fas fa-sitemap"></i></div>
+          <h3>DSA</h3>
+          <div class="skill-tags">
+            <span class="tag">Data Structures</span>
+            <span class="tag">Algorithms</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Eclipse</span>
+            <span class="tag">Jupyter Notebook</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-icon"><i class="fas fa-users"></i></div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="tag">Time Management</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">Teamwork</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">Things I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-glow"></div>
+          <div class="project-number">01</div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <div>
+              <h3 class="project-title">Brain Health Analyzer</h3>
+              <span class="project-badge">Final Year Project</span>
+            </div>
+          </div>
+          <p class="project-description">
+            An AI-powered healthcare web application that analyzes EEG brain signals for
+            seizure prediction. Trained and compared ensemble classification models on an
+            85-feature EEG dataset to classify neurological states with high accuracy.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">scikit-learn</span>
+            <span class="tech-tag">Decision Tree</span>
+            <span class="tech-tag">Random Forest</span>
+            <span class="tech-tag">SVM</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ShashiBhat25/brain_health_analysis" target="_blank" rel="noopener" class="project-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-number">02</div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <div>
+              <h3 class="project-title">Employee Attrition Prediction System</h3>
+              <span class="project-badge">PySpiders Internship Project</span>
+            </div>
+          </div>
+          <p class="project-description">
+            A machine learning system to predict employee attrition using the IBM HR Analytics
+            dataset. Applies binary classification and risk-tier segmentation to identify
+            at-risk employees. Integrated Fairlearn for fairness and bias analysis, and built
+            a Flask dashboard to visualize attrition risk for HR stakeholders.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Fairlearn</span>
+            <span class="tech-tag">scikit-learn</span>
+            <span class="tech-tag">SQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ShashiBhat25/Employe_attrition_prediction" target="_blank" rel="noopener" class="project-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-label">04 / Education</div>
+      <h2 class="section-title">Academic Background</h2>
+      <div class="edu-solo">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Bachelor of Engineering</h4>
+              <p class="timeline-sub">Information Science and Engineering</p>
+              <p class="timeline-org">The Oxford College of Engineering, Bengaluru</p>
+              <div class="timeline-meta">
+                <span><i class="fas fa-calendar"></i> June 2026</span>
+                <span class="highlight">CGPA: 8.6</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Pre-University – PCMB</h4>
+              <p class="timeline-org">Poornaprajna PU College, Udupi</p>
+              <div class="timeline-meta">
+                <span><i class="fas fa-calendar"></i> February 2022</span>
+                <span class="highlight">89%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label">05 / Contact</div>
+      <div class="contact-wrapper">
+
+        <!-- Left: Heading + status -->
+        <div class="contact-left">
+          <h2 class="contact-heading">Let's <span class="name-accent">Connect</span></h2>
+          <div class="open-to-work">
+            <span class="otw-dot"></span> Open to Work
+          </div>
+          <p class="contact-intro">
+            I'm actively looking for full-time and internship opportunities in full stack development,
+            Python, and machine learning. If you have a role or project that could be a good fit,
+            I'd love to hear from you.
+          </p>
+        </div>
+
+        <!-- Right: Link tiles -->
+        <div class="contact-right">
+
+          <div class="contact-tile" id="copy-email" role="button" tabindex="0" aria-label="Copy email address">
+            <div class="tile-icon-wrap" style="--tile-color: #ec4899;">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="tile-body">
+              <span class="tile-label">Email</span>
+              <span class="tile-value">shashikumarbhatise2026@gmail.com</span>
+            </div>
+            <i class="fas fa-copy tile-arrow" id="copy-icon"></i>
+          </div>
+
+          <a href="tel:+919482925867" class="contact-tile">
+            <div class="tile-icon-wrap" style="--tile-color: #10b981;">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="tile-body">
+              <span class="tile-label">Phone</span>
+              <span class="tile-value">+91 9482925867</span>
+            </div>
+            <i class="fas fa-arrow-up-right tile-arrow"></i>
+          </a>
+
+          <a href="https://github.com/ShashiBhat25" target="_blank" rel="noopener" class="contact-tile">
+            <div class="tile-icon-wrap" style="--tile-color: #a78bfa;">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="tile-body">
+              <span class="tile-label">GitHub</span>
+              <span class="tile-value">github.com/ShashiBhat25</span>
+            </div>
+            <i class="fas fa-arrow-up-right tile-arrow"></i>
+          </a>
+
+          <a href="https://linkedin.com/in/shashikumar-bhat" target="_blank" rel="noopener" class="contact-tile">
+            <div class="tile-icon-wrap" style="--tile-color: #06b6d4;">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="tile-body">
+              <span class="tile-label">LinkedIn</span>
+              <span class="tile-value">linkedin.com/in/shashikumar-bhat</span>
+            </div>
+            <i class="fas fa-arrow-up-right tile-arrow"></i>
+          </a>
+
+          <a href="Shashikumar_Bhat_Resume.pdf" download class="contact-tile contact-tile-resume">
+            <div class="tile-icon-wrap" style="--tile-color: #f59e0b;">
+              <i class="fas fa-file-arrow-down"></i>
+            </div>
+            <div class="tile-body">
+              <span class="tile-label">Resume</span>
+              <span class="tile-value">Download my CV</span>
+            </div>
+            <i class="fas fa-download tile-arrow"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Designed &amp; built by <strong>Shashikumar Bhat</strong></p>
+    <p class="footer-sub">Bengaluru, India · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
